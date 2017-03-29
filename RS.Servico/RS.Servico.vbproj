@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1225BCF-0E06-4E35-880B-9ED779CDD265}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RS.Servico</RootNamespace>
+    <AssemblyName>RS.Servico</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Empty</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoriaProduto\ServicoCategoriaProduto.vb" />
+    <Compile Include="Cliente\ServicoCliente.vb" />
+    <Compile Include="Contato\ServicoContato.vb" />
+    <Compile Include="DataComemorativa\ServicoDataComemorativa.vb" />
+    <Compile Include="Item\ServicoItem.vb" />
+    <Compile Include="Login\ServicoLogin.vb" />
+    <Compile Include="ModuloUsuarioPerfil\ServicoModuloFuncionarioPerfil.vb" />
+    <Compile Include="Pagamento\ServicoPagamento.vb" />
+    <Compile Include="Parametrizacao\ServicoParametrizacao.vb" />
+    <Compile Include="Parametrizacao\ServicoMensagemSistema.vb" />
+    <Compile Include="Parcelas\ServicoParcela.vb" />
+    <Compile Include="Pedido\ServicoPedido.vb" />
+    <Compile Include="PerfilCategoria\ServicoPerfilCategoria.vb" />
+    <Compile Include="Perfil\ServicoPerfil.vb" />
+    <Compile Include="Categoria\ServicoCategoria.vb" />
+    <Compile Include="Funcionario\ServicoFuncionario.vb" />
+    <Compile Include="Pessoa\ServicoPessoa.vb" />
+    <Compile Include="Produto\ServicoProduto.vb" />
+    <Compile Include="SituacaoPedido\ServicoSituacaoPedido.vb" />
+    <Compile Include="TipoPagamento\ServicoTipoPagamento.vb" />
+    <Compile Include="UF\ServicoUF.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RS.Data\RS.Data.vbproj">
+      <Project>{9aee1df8-cd6c-4a39-adc7-3a67dd39e437}</Project>
+      <Name>RS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RS.Modelo\RS.Modelo.vbproj">
+      <Project>{f7118b14-f995-4d1b-ba80-100da5b437db}</Project>
+      <Name>RS.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RS.Util\RS.Util.vbproj">
+      <Project>{0d220f47-8af3-4f6d-a373-0b3efed126c8}</Project>
+      <Name>RS.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
